@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Título principal */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form select,
+  form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Saldo */
+  .balance {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .balance h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  
+  #balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Listas */
+  .lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    flex: 1;
+  }
+  
+  .section h3 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+  
+  /* Estilo para itens */
+  li {
+    background-color: #f1f1f1;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .receita {
+    border-left: 6px solid #28a745;
+  }
+  
+  .despesa {
+    border-left: 6px solid #dc3545;
+  }
+  
+  /* Botões extras */
+  #clear-all,
+  #export-csv {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #clear-all {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  #clear-all:hover {
+    background-color: #c82333;
+  }
+  
+  #export-csv {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  #export-csv:hover {
+    background-color: #138496;
+  }
+  
+  /* Gráfico */
+  canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
